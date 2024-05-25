@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Device Information</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .device-list {
+            list-style-type: none;
+        }
+        .device-list li {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="device-list">
+        <li onclick="openDeviceInfo('Mobile Phone')">Mobile Phone</li>
+        <li onclick="openDeviceInfo('Laptop')">Laptop</li>
+        <li onclick="openDeviceInfo('Desktop')">Desktop</li>
+    </ul>
+
+    <script>
+        function openDeviceInfo(deviceName) {
+            const info = {
+                "Mobile Phone": "A mobile phone is a portable telephone that can make and receive calls.",
+                "Laptop": "A laptop is a portable personal computer with a screen and keyboard.",
+                "Desktop": "A desktop computer is intended for regular use at a single location."
+            };
+
+            const newTab = window.open("", "_blank");
+            newTab.document.write(`<p>${info[deviceName]}</p>`);
+        }
+    </script>
+</body>
+</html>

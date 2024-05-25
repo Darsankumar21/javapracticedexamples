@@ -1,0 +1,28 @@
+JDBC with 5 steps:
+1. Register driver class
+class class{
+  public static void forName(String driver) throws ClassNotFoundException{}
+}
+try{
+  Class.forName("");
+}
+catch (ClassNotFoundException c){}
+
+2.create the connection object
+try{
+Connection con = DriverManager.getConnection();
+}
+catch(SQL Exception s){}
+getConnection(String url);
+getConnection(String url, String uname,String Pwd);
+getConnection(Properties prop);
+
+3. create the statement object
+Statement -- static query// statement is to execute one fixed sql query
+PreparedStatement -- dynamic query //to execute dynamic sql query
+Callable Statement -- stored program //
+
+4. execute the query
+execute()
+executeQuery()
+

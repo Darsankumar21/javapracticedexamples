@@ -1,0 +1,16 @@
+create  a project name CRUD Employee and create a program to accomplish the following tasks
+write a java program to do following jobs:
+- store a employee information in employee table
+- retreive certain employee details
+- retreive all employee details
+- update designation and adress of specified employee
+- delete specified employee
+[Employee class] [EmployeeCrudOperation class] [Test Class]
+A POJO class storeData()
+to represent retreiveData()
+an employee  retreiveData(int id)
+            updateData(int id, string desig, string address)
+            deleteData(int id)
+
+-- JDBC
+--inheritance polymorphism
